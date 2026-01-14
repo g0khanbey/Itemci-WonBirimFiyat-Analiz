@@ -16,7 +16,8 @@ Itemci.com üzerindeki WON satış ilanlarını analiz ederek en düşük WON fi
 2. Chrome araç çubuğundaki **Itemci Won Fiyat Analiz** uzantı ikonuna tıklayın  
 3. Uzantı, sayfadaki ilanları analiz ederek en düşük WON fiyatını tespit eder  
 
-https://github.com/g0khanbey/Itemci-WonBirimFiyat-Analiz/blob/main/Ekran%20Al%C4%B1nt%C4%B1s%C4%B1.PNG
+![Itemci Won Fiyat Analiz](https://raw.githubusercontent.com/g0khanbey/Itemci-WonBirimFiyat-Analiz/main/Ekran%20Al%C4%B1nt%C4%B1s%C4%B1.PNG)
+
 ## Kurulum (Manuel)
 
 1. Bu repoyu bilgisayarınıza indirin veya klonlayın  
