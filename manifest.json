@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Itemci Won Fiyat Analiz",
-  "version": "1.0",
+  "version": "1.2.4",
   "description": "Itemci.com üzerindeki en düşük WON fiyatlarını bulur.",
   "permissions": ["activeTab", "scripting"],
   "action": {

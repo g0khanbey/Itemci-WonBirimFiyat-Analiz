@@ -1,17 +1,55 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
   <title>Won Analiz</title>
-  <style>
-    body { font-family: Arial; padding: 10px; width: 350px; }
-    .item { margin-bottom: 10px; padding: 5px; border-bottom: 1px solid #ddd; }
-  </style>
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <h3>En Düşük WON Fiyatları</h3>
-  <button id="taraBtn">Sayfayı Tara</button>
-  <div id="liste"></div>
+  <main class="app">
+    <header class="hero">
+      <div class="brand-mark" aria-hidden="true">W</div>
+      <div>
+        <p class="eyebrow">ITEMCI ANALİZ</p>
+        <h1>Won fiyat karşılaştırma</h1>
+        <p class="subtitle">İlanları birim fiyata göre saniyeler içinde sırala.</p>
+      </div>
+    </header>
+
+    <button class="scan-button" id="taraBtn" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 7V4h3M17 4h3v3M20 17v3h-3M7 20H4v-3M7 12h10M12 7v10"/>
+      </svg>
+      <span id="buttonText">Sayfadaki ilanları tara</span>
+    </button>
+
+    <div class="status" id="status" role="status" aria-live="polite" hidden></div>
+
+    <section class="summary" id="summary" aria-label="Tarama özeti" hidden>
+      <div class="summary-card">
+        <span class="summary-label">İlan sayısı</span>
+        <strong id="resultCount">0</strong>
+      </div>
+      <div class="summary-card summary-card-accent summary-card-unit">
+        <span class="summary-label">En düşük</span>
+        <strong id="bestPrice">—</strong>
+      </div>
+      <div class="summary-card summary-card-unit" title="En düşük 10 ilanın aritmetik birim fiyat ortalaması">
+        <span class="summary-label" title="En düşük 10 ilanın ortalama birim fiyatı">İlk 10 ort.</span>
+        <strong id="averagePrice">—</strong>
+      </div>
+    </section>
+
+    <section class="results" id="resultsSection" hidden>
+      <div class="section-title">
+        <h2>En iyi fırsatlar</h2>
+        <span>İlk 10 ilan</span>
+      </div>
+      <div class="list" id="liste"></div>
+    </section>
+  </main>
 
   <script src="popup.js"></script>
 </body>
